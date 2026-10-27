@@ -1,0 +1,40 @@
+CREATE TABLE IF NOT EXISTS schema_version (version INTEGER PRIMARY KEY);
+INSERT OR IGNORE INTO schema_version VALUES (1);
+CREATE TABLE IF NOT EXISTS tasks (
+ id TEXT PRIMARY KEY, created REAL NOT NULL, updated REAL NOT NULL,
+ state TEXT NOT NULL, spec TEXT NOT NULL, calls INTEGER NOT NULL DEFAULT 0,
+ tokens INTEGER NOT NULL DEFAULT 0, tool_seconds REAL NOT NULL DEFAULT 0,
+ elapsed REAL NOT NULL DEFAULT 0, error TEXT, owner TEXT, lease_until REAL,
+ fence INTEGER NOT NULL DEFAULT 0, cancel INTEGER NOT NULL DEFAULT 0,
+ experiment TEXT, arm TEXT, official_resolved INTEGER, official_run TEXT
+);
+CREATE TABLE IF NOT EXISTS attempts (
+ id TEXT PRIMARY KEY, task_id TEXT NOT NULL REFERENCES tasks(id), fence INTEGER NOT NULL,
+ started REAL NOT NULL, ended REAL, outcome TEXT
+);
+CREATE TABLE IF NOT EXISTS events (
+ seq INTEGER PRIMARY KEY AUTOINCREMENT, task_id TEXT NOT NULL REFERENCES tasks(id),
+ time REAL NOT NULL, kind TEXT NOT NULL, payload TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS events_task ON events(task_id, seq);
+CREATE TABLE IF NOT EXISTS operations (
+ id TEXT PRIMARY KEY, task_id TEXT NOT NULL REFERENCES tasks(id), path TEXT NOT NULL,
+ before_hash TEXT NOT NULL, after_hash TEXT NOT NULL, content TEXT NOT NULL,
+ state TEXT NOT NULL, created REAL NOT NULL
+);
+CREATE TABLE IF NOT EXISTS checkpoints (
+ id TEXT PRIMARY KEY, task_id TEXT NOT NULL REFERENCES tasks(id), created REAL NOT NULL,
+ manifest TEXT NOT NULL, context TEXT NOT NULL, budget TEXT NOT NULL, environment TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS artifacts (
+ id TEXT PRIMARY KEY, task_id TEXT NOT NULL REFERENCES tasks(id), kind TEXT NOT NULL,
+ path TEXT NOT NULL, sha256 TEXT NOT NULL, created REAL NOT NULL
+);
+CREATE TABLE IF NOT EXISTS reviews (
+ id TEXT PRIMARY KEY, task_id TEXT NOT NULL REFERENCES tasks(id), time REAL NOT NULL,
+ decision TEXT NOT NULL, reviewer TEXT NOT NULL, note TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS experiments (
+ id TEXT PRIMARY KEY, created REAL NOT NULL, name TEXT NOT NULL, manifest TEXT NOT NULL,
+ config TEXT NOT NULL
+);

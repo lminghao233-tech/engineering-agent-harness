@@ -1,0 +1,16 @@
+[project]
+name = "engineering-agent-harness"
+version = "0.1.0"
+description = "Durable engineering agent execution and evidence console"
+requires-python = ">=3.12"
+dependencies = ["fastapi", "uvicorn", "httpx"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pyarrow"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120

@@ -1,0 +1,60 @@
+{
+  "run_id": "5a5136672fdb42f3bbe4521f11e8aadb",
+  "kind": "deterministic_engineering_fault_injection",
+  "official_swebench": false,
+  "seed": 20261027,
+  "position_rule": "fixed by named test; identical input per repeat; not a real-model ablation",
+  "command": [
+    "C:\\Users\\15596\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-k",
+    "test_real_worker_process_dies_after_write_before_ack_and_recovers or test_expired_owner_fenced_out or test_tool_timeout_terminates_owned_subprocess or test_provider_rate_limit_is_retryable_and_consumes_budget or test_cancel_stops_heartbeat_and_no_more_calls or test_budget_reservation_survives_retry or test_unknown_side_effect_is_not_replayed",
+    "--junitxml",
+    "C:\\Users\\15596\\Documents\\Codex\\2026-10-27\\gen\\outputs\\engineering-agent-harness\\evidence\\faults\\5a5136672fdb42f3bbe4521f11e8aadb\\junit.xml",
+    "--basetemp",
+    "C:\\Users\\15596\\Documents\\Codex\\2026-10-27\\gen\\work\\fault-release"
+  ],
+  "exit_code": 0,
+  "seconds": 1.468000000109896,
+  "cases": [
+    {
+      "fault": "write_before_ack",
+      "test": "test_real_worker_process_dies_after_write_before_ack_and_recovers",
+      "passed": true
+    },
+    {
+      "fault": "worker_lease_expiry",
+      "test": "test_expired_owner_fenced_out",
+      "passed": true
+    },
+    {
+      "fault": "tool_timeout",
+      "test": "test_tool_timeout_terminates_owned_subprocess",
+      "passed": true
+    },
+    {
+      "fault": "model_rate_limit",
+      "test": "test_provider_rate_limit_is_retryable_and_consumes_budget",
+      "passed": true
+    },
+    {
+      "fault": "cancellation",
+      "test": "test_cancel_stops_heartbeat_and_no_more_calls",
+      "passed": true
+    },
+    {
+      "fault": "budget_exhaustion",
+      "test": "test_budget_reservation_survives_retry",
+      "passed": true
+    },
+    {
+      "fault": "uncertain_operation",
+      "test": "test_unknown_side_effect_is_not_replayed",
+      "passed": true
+    }
+  ],
+  "baseline_vs_enhanced_real_model": "not executed: model credential and Linux Docker worker unavailable"
+}

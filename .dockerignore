@@ -1,0 +1,10 @@
+.git
+.env
+.venv
+var
+work
+evidence
+data/evaluator-only
+data/downloads
+__pycache__
+.pytest_cache

@@ -1,0 +1,32 @@
+{
+  "task_id": "bf7b680230274083953cdbbddb0a877e",
+  "instance_id": "fixture__repair-1",
+  "patch_artifact": "d393809427a9463ba2559dad2f0528b5",
+  "patch_sha256": "137153ea5f7b518418acdac9bef12ae4ca3213cf5668580a1c0e980b42c1c95c",
+  "verification": {
+    "exit_code": 0,
+    "output": "",
+    "seconds": 0.06199999991804361,
+    "fixture": true,
+    "kind": "independent_repository_tests",
+    "official_swebench": false,
+    "patch_sha256": "137153ea5f7b518418acdac9bef12ae4ca3213cf5668580a1c0e980b42c1c95c",
+    "environment": {
+      "image": "deterministic-test-fixture",
+      "official": false,
+      "limits": {
+        "cpu": "2",
+        "memory": "2g",
+        "pids": 64,
+        "workspace_mb": 256,
+        "total_disk_mb": 4096,
+        "tool_timeout": 60,
+        "output_bytes": 128000,
+        "network": "none"
+      }
+    },
+    "original_tests_preserved": true
+  },
+  "official_resolved": null,
+  "review_required": true
+}

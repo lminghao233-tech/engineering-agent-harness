@@ -1,0 +1,496 @@
+{
+  "kind": "deterministic_engineering_fixture",
+  "real_model": false,
+  "official_swebench": false,
+  "task": {
+    "id": "bf7b680230274083953cdbbddb0a877e",
+    "created": 1793091206.0049307,
+    "updated": 1793091206.5069065,
+    "state": "AWAITING_REVIEW",
+    "spec": {
+      "instance_id": "fixture__repair-1",
+      "repo": "fixture/repair",
+      "base_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "problem_statement": "Fix the addition function",
+      "tests": [
+        "tests"
+      ],
+      "data_revision": "fixture",
+      "max_calls": 4,
+      "max_tokens": 100000,
+      "max_seconds": 120,
+      "max_tool_seconds": 30,
+      "execution_config": {
+        "model": "deterministic-fixture",
+        "image": "fixture@sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "context_tokens": 16384
+      }
+    },
+    "calls": 3,
+    "tokens": 3000,
+    "tool_seconds": 0.0940000000409782,
+    "elapsed": 0.46800000010989606,
+    "error": null,
+    "owner": null,
+    "lease_until": null,
+    "fence": 1,
+    "cancel": 0,
+    "experiment": null,
+    "arm": null,
+    "official_resolved": null,
+    "official_run": null
+  },
+  "events": [
+    {
+      "seq": 1,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.0049307,
+      "kind": "created",
+      "payload": {
+        "source": "fixture__repair-1",
+        "arm": null
+      }
+    },
+    {
+      "seq": 2,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.0263195,
+      "kind": "claimed",
+      "payload": {
+        "owner": "98363890ab2b4371bc14a49a0e1fb0f9",
+        "fence": 1
+      }
+    },
+    {
+      "seq": 3,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.0929558,
+      "kind": "environment",
+      "payload": {
+        "image": "deterministic-test-[REDACTED]",
+        "official": false,
+        "limits": {
+          "cpu": "2",
+          "memory": "2g",
+          "pids": 64,
+          "workspace_mb": 256,
+          "total_disk_mb": 4096,
+          "tool_timeout": 60,
+          "output_bytes": 128000,
+          "network": "none"
+        },
+        "prompt_version": "engineering-harness/v1",
+        "data_revision": "[REDACTED]",
+        "hints_enabled": false,
+        "code_revision": "HEAD",
+        "dependency_lock_sha256": "9ff5e1c03d011fdb8dbb0a302ebdbda84da1c93b3f7ab5be471d2db1dc65ab60",
+        "source_sha256": "68a5b8d64096ed7975e4b2f01977f26cdf33b28d513a44fcf725ae66d525db4a"
+      }
+    },
+    {
+      "seq": 4,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.0929558,
+      "kind": "timing",
+      "payload": {
+        "phase": "queue",
+        "seconds": 0.021388769149780273
+      }
+    },
+    {
+      "seq": 5,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.1136508,
+      "kind": "timing",
+      "payload": {
+        "phase": "repository_preparation",
+        "seconds": 0.0
+      }
+    },
+    {
+      "seq": 6,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.1177766,
+      "kind": "operations_reconciled",
+      "payload": []
+    },
+    {
+      "seq": 7,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.1252506,
+      "kind": "state",
+      "payload": {
+        "from": "PREPARING",
+        "to": "RUNNING",
+        "error": null
+      }
+    },
+    {
+      "seq": 8,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.1457634,
+      "kind": "checkpoint",
+      "payload": {
+        "id": "12d8b907fcb6462f88680b81d3d4ad6f",
+        "files": 2,
+        "pending": []
+      }
+    },
+    {
+      "seq": 9,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.15723,
+      "kind": "model_reserved",
+      "payload": {
+        "tokens": 1000,
+        "source": "conservative reservation; actual usage tracked separately"
+      }
+    },
+    {
+      "seq": 10,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.1616018,
+      "kind": "timing",
+      "payload": {
+        "phase": "model",
+        "seconds": 0.014999999897554517
+      }
+    },
+    {
+      "seq": 11,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.16733,
+      "kind": "action",
+      "payload": {
+        "tool": "write_file",
+        "args": {
+          "path": "calc.py",
+          "content": "def add(a, b):\n    return a + b\n",
+          "expected_hash": "828092436119a2bb1f39a167f274196a96fd68a3f31b75e3a54feb776c4a266d"
+        }
+      }
+    },
+    {
+      "seq": 12,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.1828504,
+      "kind": "file_written",
+      "payload": {
+        "operation_id": "13a8c72e3331494ca5e13b2e1c4ea3f7",
+        "path": "calc.py",
+        "sha256": "ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772"
+      }
+    },
+    {
+      "seq": 13,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.1883852,
+      "kind": "tool_result",
+      "payload": {
+        "operation_id": "13a8c72e3331494ca5e13b2e1c4ea3f7",
+        "tool": "write_file",
+        "seconds": 0.01600000006146729,
+        "result": {
+          "operation_id": "13a8c72e3331494ca5e13b2e1c4ea3f7",
+          "state": "CONFIRMED",
+          "sha256": "ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772"
+        }
+      }
+    },
+    {
+      "seq": 14,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.2177155,
+      "kind": "checkpoint",
+      "payload": {
+        "id": "99ce6b5502104d54a1d0aaed96f6134e",
+        "files": 2,
+        "pending": []
+      }
+    },
+    {
+      "seq": 15,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.2262444,
+      "kind": "model_reserved",
+      "payload": {
+        "tokens": 1000,
+        "source": "conservative reservation; actual usage tracked separately"
+      }
+    },
+    {
+      "seq": 16,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.232449,
+      "kind": "timing",
+      "payload": {
+        "phase": "model",
+        "seconds": 0.0
+      }
+    },
+    {
+      "seq": 17,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.2362194,
+      "kind": "action",
+      "payload": {
+        "tool": "run_tests",
+        "args": {}
+      }
+    },
+    {
+      "seq": 18,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.3067753,
+      "kind": "tool_result",
+      "payload": {
+        "operation_id": "fae5d56e9907497ab55fc317d4ba2945",
+        "tool": "run_tests",
+        "seconds": 0.0779999999795109,
+        "result": {
+          "kind": "exploratory",
+          "exit_code": 0,
+          "output": "",
+          "seconds": 0.0779999999795109,
+          "[REDACTED]": true
+        }
+      }
+    },
+    {
+      "seq": 19,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.334342,
+      "kind": "checkpoint",
+      "payload": {
+        "id": "b24200ce1a9e49ef9a2135e12fbc8c5d",
+        "files": 2,
+        "pending": []
+      }
+    },
+    {
+      "seq": 20,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.3461964,
+      "kind": "model_reserved",
+      "payload": {
+        "tokens": 1000,
+        "source": "conservative reservation; actual usage tracked separately"
+      }
+    },
+    {
+      "seq": 21,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.351118,
+      "kind": "timing",
+      "payload": {
+        "phase": "model",
+        "seconds": 0.01600000006146729
+      }
+    },
+    {
+      "seq": 22,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.3561006,
+      "kind": "action",
+      "payload": {
+        "tool": "finish",
+        "args": {
+          "summary": "deterministic engineering [REDACTED] only"
+        }
+      }
+    },
+    {
+      "seq": 23,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.377848,
+      "kind": "state",
+      "payload": {
+        "from": "RUNNING",
+        "to": "VERIFYING",
+        "error": null
+      }
+    },
+    {
+      "seq": 24,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.4838896,
+      "kind": "verification",
+      "payload": {
+        "exit_code": 0,
+        "output": "",
+        "seconds": 0.06199999991804361,
+        "[REDACTED]": true,
+        "kind": "independent_repository_tests",
+        "official_swebench": false,
+        "patch_sha256": "137153ea5f7b518418acdac9bef12ae4ca3213cf5668580a1c0e980b42c1c95c",
+        "environment": {
+          "image": "deterministic-test-[REDACTED]",
+          "official": false,
+          "limits": {
+            "cpu": "2",
+            "memory": "2g",
+            "pids": 64,
+            "workspace_mb": 256,
+            "total_disk_mb": 4096,
+            "tool_timeout": 60,
+            "output_bytes": 128000,
+            "network": "none"
+          }
+        },
+        "original_tests_preserved": true
+      }
+    },
+    {
+      "seq": 25,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.4895563,
+      "kind": "timing",
+      "payload": {
+        "phase": "verification",
+        "seconds": 0.09300000010989606
+      }
+    },
+    {
+      "seq": 26,
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "time": 1793091206.5069065,
+      "kind": "state",
+      "payload": {
+        "from": "VERIFYING",
+        "to": "AWAITING_REVIEW",
+        "error": null
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "12d8b907fcb6462f88680b81d3d4ad6f",
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "created": 1793091206.1457634,
+      "manifest": {
+        "calc.py": "828092436119a2bb1f39a167f274196a96fd68a3f31b75e3a54feb776c4a266d",
+        "tests/test_calc.py": "a513900ff89b30c7ae2861fee45be92f5a2119c987f0c599210b6137de69f683"
+      },
+      "context": [
+        {
+          "role": "user",
+          "content": "{\"repo\": \"fixture/repair\", \"base_commit\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\", \"problem_statement\": \"Fix the addition function\", \"instance_id\": \"fixture__repair-1\"}"
+        }
+      ],
+      "budget": {
+        "calls": 0,
+        "tokens": 0,
+        "elapsed": 0.0779999999795109,
+        "tool_seconds": 0.0
+      },
+      "environment": {
+        "image": "deterministic-test-fixture",
+        "official": false,
+        "limits": {
+          "cpu": "2",
+          "memory": "2g",
+          "pids": 64,
+          "workspace_mb": 256,
+          "total_disk_mb": 4096,
+          "tool_timeout": 60,
+          "output_bytes": 128000,
+          "network": "none"
+        }
+      }
+    },
+    {
+      "id": "99ce6b5502104d54a1d0aaed96f6134e",
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "created": 1793091206.2177155,
+      "manifest": {
+        "calc.py": "ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772",
+        "tests/test_calc.py": "a513900ff89b30c7ae2861fee45be92f5a2119c987f0c599210b6137de69f683"
+      },
+      "context": [
+        {
+          "role": "user",
+          "content": "{\"repo\": \"fixture/repair\", \"base_commit\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\", \"problem_statement\": \"Fix the addition function\", \"instance_id\": \"fixture__repair-1\"}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"tool\": \"write_file\", \"args\": {\"path\": \"calc.py\", \"content\": \"def add(a, b):\\n    return a + b\\n\", \"expected_hash\": \"828092436119a2bb1f39a167f274196a96fd68a3f31b75e3a54feb776c4a266d\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Tool evidence: {\"operation_id\": \"13a8c72e3331494ca5e13b2e1c4ea3f7\", \"state\": \"CONFIRMED\", \"sha256\": \"ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772\"}"
+        }
+      ],
+      "budget": {
+        "calls": 1,
+        "tokens": 1000,
+        "elapsed": 0.17100000008940697,
+        "tool_seconds": 0.01600000006146729
+      },
+      "environment": {
+        "image": "deterministic-test-fixture",
+        "official": false,
+        "limits": {
+          "cpu": "2",
+          "memory": "2g",
+          "pids": 64,
+          "workspace_mb": 256,
+          "total_disk_mb": 4096,
+          "tool_timeout": 60,
+          "output_bytes": 128000,
+          "network": "none"
+        }
+      }
+    },
+    {
+      "id": "b24200ce1a9e49ef9a2135e12fbc8c5d",
+      "task_id": "bf7b680230274083953cdbbddb0a877e",
+      "created": 1793091206.334342,
+      "manifest": {
+        "calc.py": "ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772",
+        "tests/test_calc.py": "a513900ff89b30c7ae2861fee45be92f5a2119c987f0c599210b6137de69f683"
+      },
+      "context": [
+        {
+          "role": "user",
+          "content": "{\"repo\": \"fixture/repair\", \"base_commit\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\", \"problem_statement\": \"Fix the addition function\", \"instance_id\": \"fixture__repair-1\"}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"tool\": \"write_file\", \"args\": {\"path\": \"calc.py\", \"content\": \"def add(a, b):\\n    return a + b\\n\", \"expected_hash\": \"828092436119a2bb1f39a167f274196a96fd68a3f31b75e3a54feb776c4a266d\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Tool evidence: {\"operation_id\": \"13a8c72e3331494ca5e13b2e1c4ea3f7\", \"state\": \"CONFIRMED\", \"sha256\": \"ba1a531f581d2e6094e978ed6f7aca7a8d92eeb62c6e7ad73ee692f7f18bc772\"}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"tool\": \"run_tests\", \"args\": {}}"
+        },
+        {
+          "role": "user",
+          "content": "Tool evidence: {\"kind\": \"exploratory\", \"exit_code\": 0, \"output\": \"\", \"seconds\": 0.0779999999795109, \"fixture\": true}"
+        }
+      ],
+      "budget": {
+        "calls": 2,
+        "tokens": 2000,
+        "elapsed": 0.2809999999590218,
+        "tool_seconds": 0.0940000000409782
+      },
+      "environment": {
+        "image": "deterministic-test-fixture",
+        "official": false,
+        "limits": {
+          "cpu": "2",
+          "memory": "2g",
+          "pids": 64,
+          "workspace_mb": 256,
+          "total_disk_mb": 4096,
+          "tool_timeout": 60,
+          "output_bytes": 128000,
+          "network": "none"
+        }
+      }
+    }
+  ]
+}

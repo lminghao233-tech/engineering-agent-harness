@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+var/
+*.sqlite*
+*.log
+data/evaluator-only/
+data/downloads/
+data/agent-visible/
+!data/agent-visible/.gitkeep

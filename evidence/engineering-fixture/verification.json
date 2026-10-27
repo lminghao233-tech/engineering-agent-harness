@@ -1,0 +1,24 @@
+{
+  "exit_code": 0,
+  "output": "",
+  "seconds": 0.06199999991804361,
+  "[REDACTED]": true,
+  "kind": "independent_repository_tests",
+  "official_swebench": false,
+  "patch_sha256": "137153ea5f7b518418acdac9bef12ae4ca3213cf5668580a1c0e980b42c1c95c",
+  "environment": {
+    "image": "deterministic-test-[REDACTED]",
+    "official": false,
+    "limits": {
+      "cpu": "2",
+      "memory": "2g",
+      "pids": 64,
+      "workspace_mb": 256,
+      "total_disk_mb": 4096,
+      "tool_timeout": 60,
+      "output_bytes": 128000,
+      "network": "none"
+    }
+  },
+  "original_tests_preserved": true
+}

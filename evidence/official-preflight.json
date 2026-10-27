@@ -1,0 +1,31 @@
+{
+  "run_id": "harness-99c7e695fb3046ef815dcc559ca8efac-e3b0c44298fc",
+  "task_id": "a5cbdc54d43942aa916572f3e379d9ae",
+  "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "swebench_version": null,
+  "time": 1793090507.11886,
+  "command": [
+    "C:\\Users\\15596\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-m",
+    "swebench.harness.run_evaluation",
+    "--dataset_name",
+    "C:\\Users\\15596\\Documents\\Codex\\2026-10-27\\gen\\outputs\\engineering-agent-harness\\data\\evaluator-only\\tasks.json",
+    "--predictions_path",
+    "C:\\Users\\15596\\Documents\\Codex\\2026-10-27\\gen\\outputs\\engineering-agent-harness\\var\\official\\harness-99c7e695fb3046ef815dcc559ca8efac-e3b0c44298fc\\predictions.jsonl",
+    "--instance_ids",
+    "marshmallow-code__marshmallow-1343",
+    "--max_workers",
+    "1",
+    "--run_id",
+    "harness-99c7e695fb3046ef815dcc559ca8efac-e3b0c44298fc"
+  ],
+  "blockers": [
+    "Docker CLI missing",
+    "Run official evaluator on Linux/WSL2 worker",
+    "No model-generated patch available",
+    "Install pinned evaluator requirements in separate Python 3.12 environment",
+    "--execute not supplied; local resource execution not authorized"
+  ],
+  "executed": false,
+  "resolved": null
+}

@@ -1,0 +1,25 @@
+[Unit]
+Description=Engineering Agent Harness trusted worker broker
+After=network-online.target docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User=harness
+Group=harness
+SupplementaryGroups=docker
+WorkingDirectory=/srv/engineering-agent-harness
+EnvironmentFile=/srv/engineering-agent-harness/.env
+ExecStart=/srv/engineering-agent-harness/.venv/bin/python -m harness.worker
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=15
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/srv/engineering-agent-harness/var
+
+[Install]
+WantedBy=multi-user.target

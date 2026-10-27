@@ -1,0 +1,417 @@
+{
+  "dataset": "SWE-bench/SWE-bench_Lite",
+  "revision": "b0dde1093fe417d83b7184254edf8199c1f0dff5",
+  "retrieved_utc": "2026-10-27T08:24:41Z",
+  "seed": 20261027,
+  "selection_rule": "sort repositories; seeded shuffle within repository; round-robin until 30; success independent; no replacements",
+  "split_counts": {
+    "dev": 23,
+    "test": 300
+  },
+  "selected_test_ids": [
+    "astropy__astropy-14182",
+    "django__django-13590",
+    "matplotlib__matplotlib-25311",
+    "mwaskom__seaborn-3010",
+    "pallets__flask-4992",
+    "psf__requests-3362",
+    "pydata__xarray-5131",
+    "pylint-dev__pylint-7228",
+    "pytest-dev__pytest-5103",
+    "scikit-learn__scikit-learn-13497",
+    "sphinx-doc__sphinx-7975",
+    "sympy__sympy-16503",
+    "astropy__astropy-12907",
+    "django__django-11583",
+    "matplotlib__matplotlib-23563",
+    "mwaskom__seaborn-3190",
+    "pallets__flask-4045",
+    "psf__requests-1963",
+    "pydata__xarray-4493",
+    "pylint-dev__pylint-5859",
+    "pytest-dev__pytest-5413",
+    "scikit-learn__scikit-learn-11281",
+    "sphinx-doc__sphinx-11445",
+    "sympy__sympy-13177",
+    "astropy__astropy-7746",
+    "django__django-12453",
+    "matplotlib__matplotlib-26020",
+    "mwaskom__seaborn-3407",
+    "pallets__flask-5063",
+    "psf__requests-2317"
+  ],
+  "development_ids": [
+    "marshmallow-code__marshmallow-1343",
+    "marshmallow-code__marshmallow-1359",
+    "pvlib__pvlib-python-1072"
+  ],
+  "instances": [
+    {
+      "instance_id": "marshmallow-code__marshmallow-1343",
+      "repo": "marshmallow-code/marshmallow",
+      "base_commit": "2be2d83a1a9a6d3d9b85804f3ab545cecc409bb0",
+      "split": "dev"
+    },
+    {
+      "instance_id": "marshmallow-code__marshmallow-1359",
+      "repo": "marshmallow-code/marshmallow",
+      "base_commit": "b40a0f4e33823e6d0f341f7e8684e359a99060d1",
+      "split": "dev"
+    },
+    {
+      "instance_id": "pvlib__pvlib-python-1072",
+      "repo": "pvlib/pvlib-python",
+      "base_commit": "04a523fafbd61bc2e49420963b84ed8e2bd1b3cf",
+      "split": "dev"
+    },
+    {
+      "instance_id": "astropy__astropy-12907",
+      "repo": "astropy/astropy",
+      "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+      "split": "test"
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "repo": "astropy/astropy",
+      "base_commit": "a5917978be39d13cd90b517e1de4e7a539ffaa48",
+      "split": "test"
+    },
+    {
+      "instance_id": "astropy__astropy-7746",
+      "repo": "astropy/astropy",
+      "base_commit": "d5bd3f68bb6d5ce3a61bdce9883ee750d1afade5",
+      "split": "test"
+    },
+    {
+      "instance_id": "django__django-11583",
+      "repo": "django/django",
+      "base_commit": "60dc957a825232fdda9138e2f8878b2ca407a7c9",
+      "split": "test"
+    },
+    {
+      "instance_id": "django__django-12453",
+      "repo": "django/django",
+      "base_commit": "b330b918e979ea39a21d47b61172d112caf432c3",
+      "split": "test"
+    },
+    {
+      "instance_id": "django__django-13590",
+      "repo": "django/django",
+      "base_commit": "755dbf39fcdc491fe9b588358303e259c7750be4",
+      "split": "test"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23563",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "149a0398b391cfc4eddb5e659f50b3c66f32ea65",
+      "split": "test"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25311",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "430fb1db88843300fb4baae3edc499bbfe073b0c",
+      "split": "test"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26020",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "f6a781f77f5ddf1204c60ca7c544809407d4a807",
+      "split": "test"
+    },
+    {
+      "instance_id": "mwaskom__seaborn-3010",
+      "repo": "mwaskom/seaborn",
+      "base_commit": "0f5a013e2cf43562deec3b879458e59a73853813",
+      "split": "test"
+    },
+    {
+      "instance_id": "mwaskom__seaborn-3190",
+      "repo": "mwaskom/seaborn",
+      "base_commit": "4a9e54962a29c12a8b103d75f838e0e795a6974d",
+      "split": "test"
+    },
+    {
+      "instance_id": "mwaskom__seaborn-3407",
+      "repo": "mwaskom/seaborn",
+      "base_commit": "515286e02be3e4c0ff2ef4addb34a53c4a676ee4",
+      "split": "test"
+    },
+    {
+      "instance_id": "pallets__flask-4045",
+      "repo": "pallets/flask",
+      "base_commit": "d8c37f43724cd9fb0870f77877b7c4c7e38a19e0",
+      "split": "test"
+    },
+    {
+      "instance_id": "pallets__flask-4992",
+      "repo": "pallets/flask",
+      "base_commit": "4c288bc97ea371817199908d0d9b12de9dae327e",
+      "split": "test"
+    },
+    {
+      "instance_id": "pallets__flask-5063",
+      "repo": "pallets/flask",
+      "base_commit": "182ce3dd15dfa3537391c3efaf9c3ff407d134d4",
+      "split": "test"
+    },
+    {
+      "instance_id": "psf__requests-1963",
+      "repo": "psf/requests",
+      "base_commit": "110048f9837f8441ea536804115e80b69f400277",
+      "split": "test"
+    },
+    {
+      "instance_id": "psf__requests-2317",
+      "repo": "psf/requests",
+      "base_commit": "091991be0da19de9108dbe5e3752917fea3d7fdc",
+      "split": "test"
+    },
+    {
+      "instance_id": "psf__requests-3362",
+      "repo": "psf/requests",
+      "base_commit": "36453b95b13079296776d11b09cab2567ea3e703",
+      "split": "test"
+    },
+    {
+      "instance_id": "pydata__xarray-4493",
+      "repo": "pydata/xarray",
+      "base_commit": "a5f53e203c52a7605d5db799864046471115d04f",
+      "split": "test"
+    },
+    {
+      "instance_id": "pydata__xarray-5131",
+      "repo": "pydata/xarray",
+      "base_commit": "e56905889c836c736152b11a7e6117a229715975",
+      "split": "test"
+    },
+    {
+      "instance_id": "pylint-dev__pylint-5859",
+      "repo": "pylint-dev/pylint",
+      "base_commit": "182cc539b8154c0710fcea7e522267e42eba8899",
+      "split": "test"
+    },
+    {
+      "instance_id": "pylint-dev__pylint-7228",
+      "repo": "pylint-dev/pylint",
+      "base_commit": "d597f252915ddcaaa15ccdfcb35670152cb83587",
+      "split": "test"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5103",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "10ca84ffc56c2dd2d9dc4bd71b7b898e083500cd",
+      "split": "test"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5413",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "450d2646233c670654744d3d24330b69895bb9d2",
+      "split": "test"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11281",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "4143356c3c51831300789e4fdf795d83716dbab6",
+      "split": "test"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13497",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "26f690961a52946dd2f53bf0fdd4264b2ae5be90",
+      "split": "test"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11445",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "71db08c05197545944949d5aa76cd340e7143627",
+      "split": "test"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7975",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "4ec6cbe341fd84468c448e20082c778043bbea4b",
+      "split": "test"
+    },
+    {
+      "instance_id": "sympy__sympy-13177",
+      "repo": "sympy/sympy",
+      "base_commit": "662cfb818e865f580e18b59efbb3540c34232beb",
+      "split": "test"
+    },
+    {
+      "instance_id": "sympy__sympy-16503",
+      "repo": "sympy/sympy",
+      "base_commit": "a7e6f093c98a3c4783848a19fce646e32b6e0161",
+      "split": "test"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite/resolve/b0dde1093fe417d83b7184254edf8199c1f0dff5/data/dev-00000-of-00001.parquet",
+      "sha256": "b90bcbfaca1b5f65155500124a977876c264a4003ab384aca4dfc39a54bef89f",
+      "bytes": 217277,
+      "split": "dev",
+      "rows": 23,
+      "fields": [
+        "FAIL_TO_PASS",
+        "PASS_TO_PASS",
+        "base_commit",
+        "created_at",
+        "difficulty",
+        "environment_setup_commit",
+        "eval_script",
+        "eval_type",
+        "hints_text",
+        "image",
+        "instance_id",
+        "log_parser",
+        "patch",
+        "problem_statement",
+        "repo",
+        "test_patch",
+        "version"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite/resolve/b0dde1093fe417d83b7184254edf8199c1f0dff5/data/test-00000-of-00001.parquet",
+      "sha256": "438e281d80587aa7be470896ce410557002fde02d2ceee3e099331d308f62dd3",
+      "bytes": 2702170,
+      "split": "test",
+      "rows": 300,
+      "fields": [
+        "FAIL_TO_PASS",
+        "PASS_TO_PASS",
+        "base_commit",
+        "created_at",
+        "difficulty",
+        "environment_setup_commit",
+        "eval_script",
+        "eval_type",
+        "hints_text",
+        "image",
+        "instance_id",
+        "log_parser",
+        "patch",
+        "problem_statement",
+        "repo",
+        "test_patch",
+        "version"
+      ]
+    }
+  ],
+  "card": {
+    "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite/raw/b0dde1093fe417d83b7184254edf8199c1f0dff5/README.md",
+    "sha256": "ec47dedb6d82aa9556d8fffed8ab6c0aa6feaae6d4bf943466d3fdbfd158ae68",
+    "declared_license": "not declared; do not infer from benchmark code"
+  },
+  "upstream_licenses": [
+    {
+      "repo": "astropy/astropy",
+      "base_commit": "d5bd3f68bb6d5ce3a61bdce9883ee750d1afade5",
+      "url": "https://raw.githubusercontent.com/astropy/astropy/d5bd3f68bb6d5ce3a61bdce9883ee750d1afade5/LICENSE.rst",
+      "sha256": "03712f43fede530155b72e3d4497bedcf6ac1c4d81b9f6e4d95e0876fec912da",
+      "license_file": "data\\licenses\\astropy__astropy.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "django/django",
+      "base_commit": "755dbf39fcdc491fe9b588358303e259c7750be4",
+      "url": "https://raw.githubusercontent.com/django/django/755dbf39fcdc491fe9b588358303e259c7750be4/LICENSE",
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+      "license_file": "data\\licenses\\django__django.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "marshmallow-code/marshmallow",
+      "base_commit": "b40a0f4e33823e6d0f341f7e8684e359a99060d1",
+      "url": "https://raw.githubusercontent.com/marshmallow-code/marshmallow/b40a0f4e33823e6d0f341f7e8684e359a99060d1/LICENSE",
+      "sha256": "ae69ff4f28b18bef6fccfe37769d182bfeb0bfabcd2d8d7f28a80933d6f2d36b",
+      "license_file": "data\\licenses\\marshmallow-code__marshmallow.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "matplotlib/matplotlib",
+      "status": "manual_license_review_required"
+    },
+    {
+      "repo": "mwaskom/seaborn",
+      "status": "manual_license_review_required"
+    },
+    {
+      "repo": "pallets/flask",
+      "base_commit": "182ce3dd15dfa3537391c3efaf9c3ff407d134d4",
+      "url": "https://raw.githubusercontent.com/pallets/flask/182ce3dd15dfa3537391c3efaf9c3ff407d134d4/LICENSE.rst",
+      "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea",
+      "license_file": "data\\licenses\\pallets__flask.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "psf/requests",
+      "base_commit": "36453b95b13079296776d11b09cab2567ea3e703",
+      "url": "https://raw.githubusercontent.com/psf/requests/36453b95b13079296776d11b09cab2567ea3e703/LICENSE",
+      "sha256": "c12dd61a3868c674312e979d0ec179ee84c82e8e63c742875238ac912fbd1bac",
+      "license_file": "data\\licenses\\psf__requests.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "pvlib/pvlib-python",
+      "base_commit": "04a523fafbd61bc2e49420963b84ed8e2bd1b3cf",
+      "url": "https://raw.githubusercontent.com/pvlib/pvlib-python/04a523fafbd61bc2e49420963b84ed8e2bd1b3cf/LICENSE",
+      "sha256": "88bd02ef00e092986978d3ca7945ffe76208a2008835dc752f34e9e4a7f338b6",
+      "license_file": "data\\licenses\\pvlib__pvlib-python.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "pydata/xarray",
+      "base_commit": "e56905889c836c736152b11a7e6117a229715975",
+      "url": "https://raw.githubusercontent.com/pydata/xarray/e56905889c836c736152b11a7e6117a229715975/LICENSE",
+      "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68",
+      "license_file": "data\\licenses\\pydata__xarray.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "pylint-dev/pylint",
+      "base_commit": "d597f252915ddcaaa15ccdfcb35670152cb83587",
+      "url": "https://raw.githubusercontent.com/pylint-dev/pylint/d597f252915ddcaaa15ccdfcb35670152cb83587/LICENSE",
+      "sha256": "f97b14080de8b8490d60eb3d620ebc419943e0779466d1dd0d5d6f68fe195dcd",
+      "license_file": "data\\licenses\\pylint-dev__pylint.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "pytest-dev/pytest",
+      "base_commit": "450d2646233c670654744d3d24330b69895bb9d2",
+      "url": "https://raw.githubusercontent.com/pytest-dev/pytest/450d2646233c670654744d3d24330b69895bb9d2/LICENSE",
+      "sha256": "4be38574daf05665b6194e4fd84c5ef6ce7c3a2810308a5222d5cdffc2d04d18",
+      "license_file": "data\\licenses\\pytest-dev__pytest.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "26f690961a52946dd2f53bf0fdd4264b2ae5be90",
+      "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/26f690961a52946dd2f53bf0fdd4264b2ae5be90/COPYING",
+      "sha256": "0a5f5c0e4d0b33493b8e62cbbeb63b84067a3bc3865723a4628768d789ed9fce",
+      "license_file": "data\\licenses\\scikit-learn__scikit-learn.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "4ec6cbe341fd84468c448e20082c778043bbea4b",
+      "url": "https://raw.githubusercontent.com/sphinx-doc/sphinx/4ec6cbe341fd84468c448e20082c778043bbea4b/LICENSE",
+      "sha256": "f275b949f651f373e41cdd163ffa89b419497f89990e1a86753ac64a33829404",
+      "license_file": "data\\licenses\\sphinx-doc__sphinx.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    },
+    {
+      "repo": "sympy/sympy",
+      "base_commit": "a7e6f093c98a3c4783848a19fce646e32b6e0161",
+      "url": "https://raw.githubusercontent.com/sympy/sympy/a7e6f093c98a3c4783848a19fce646e32b6e0161/LICENSE",
+      "sha256": "f8254a405fae8fc9b2a13b9c3202e6fdfce7fa4c0886deb691dd7d72f1e09286",
+      "license_file": "data\\licenses\\sympy__sympy.txt",
+      "scope": "retrieved file at representative selected baseline; review per repository"
+    }
+  ],
+  "hints_enabled": false,
+  "answers_exposed_to_agent": false,
+  "citation": "Jimenez et al., SWE-bench: Can Language Models Resolve Real-World GitHub Issues?, ICLR 2024, https://arxiv.org/abs/2310.06770",
+  "contamination": "Public benchmark may be present in model pretraining; cannot rule out contamination."
+}

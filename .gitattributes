@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.png -text
+*.patch -text
+data/licenses/** -text whitespace=-blank-at-eol,-blank-at-eof

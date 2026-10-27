@@ -1,0 +1,7 @@
+# Operator preparation only. Add the selected repository's locked dependencies at build time.
+# Never run this build on behalf of model tool requests. Supply a digest-pinned base for release builds.
+ARG PYTHON_IMAGE=python:3.12-slim
+FROM ${PYTHON_IMAGE}
+RUN python -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir pytest==9.1.1
+USER 65532:65532
+WORKDIR /work

@@ -1,0 +1,89 @@
+{
+  "id": "0de14bc591b24605bbf29dba4f52f5e4",
+  "created": 1793090559.1227472,
+  "updated": 1793090598.253281,
+  "state": "BLOCKED",
+  "spec": {
+    "instance_id": "pylint-dev__pylint-7228",
+    "repo": "pylint-dev/pylint",
+    "base_commit": "d597f252915ddcaaa15ccdfcb35670152cb83587",
+    "tests": [
+      "tests"
+    ],
+    "max_calls": 12,
+    "max_tokens": 240000,
+    "max_seconds": 1800,
+    "max_tool_seconds": 600,
+    "data_revision": "b0dde1093fe417d83b7184254edf8199c1f0dff5",
+    "problem_statement_sha256": "9aa65f8c494b6db880f3282fe58f3c68f077e7ae18d3b0933e34f394916723c9"
+  },
+  "calls": 0,
+  "tokens": 0,
+  "tool_seconds": 0.0,
+  "elapsed": 0.0,
+  "error": "CONFIGURATION: MODEL_NAME / MODEL_API_KEY not configured; Paid model calls not authorized (MODEL_CALLS_AUTHORIZED=false); HARNESS_IMAGE must be an operator-prepared image pinned by sha256 digest; Docker CLI unavailable; configure a Linux Docker worker",
+  "owner": null,
+  "lease_until": null,
+  "fence": 1,
+  "cancel": 0,
+  "experiment": "d10ca21810c74c1085e95d47e99d41bd",
+  "arm": "enhanced",
+  "official_resolved": null,
+  "official_run": null,
+  "events": [
+    {
+      "seq": 47,
+      "task_id": "0de14bc591b24605bbf29dba4f52f5e4",
+      "time": 1793090559.1227472,
+      "kind": "created",
+      "payload": {
+        "source": "pylint-dev__pylint-7228",
+        "arm": "enhanced"
+      }
+    },
+    {
+      "seq": 181,
+      "task_id": "0de14bc591b24605bbf29dba4f52f5e4",
+      "time": 1793090598.2284083,
+      "kind": "claimed",
+      "payload": {
+        "owner": "90ab3b520508454ba85d300f29087c36",
+        "fence": 1
+      }
+    },
+    {
+      "seq": 182,
+      "task_id": "0de14bc591b24605bbf29dba4f52f5e4",
+      "time": 1793090598.2441986,
+      "kind": "failure",
+      "payload": {
+        "category": "CONFIGURATION",
+        "message": "MODEL_NAME / MODEL_API_KEY not configured; Paid model calls not authorized (MODEL_CALLS_AUTHORIZED=false); HARNESS_IMAGE must be an operator-prepared image pinned by sha256 digest; Docker CLI unavailable; configure a Linux Docker worker"
+      }
+    },
+    {
+      "seq": 183,
+      "task_id": "0de14bc591b24605bbf29dba4f52f5e4",
+      "time": 1793090598.253281,
+      "kind": "state",
+      "payload": {
+        "from": "PREPARING",
+        "to": "BLOCKED",
+        "error": "CONFIGURATION: MODEL_NAME / MODEL_API_KEY not configured; Paid model calls not authorized (MODEL_CALLS_AUTHORIZED=false); HARNESS_IMAGE must be an operator-prepared image pinned by sha256 digest; Docker CLI unavailable; configure a Linux Docker worker"
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "id": "8c1700ed15b9455a93b991e13e4be8b5",
+      "task_id": "0de14bc591b24605bbf29dba4f52f5e4",
+      "fence": 1,
+      "started": 1793090598.2284083,
+      "ended": 1793090598.267322,
+      "outcome": "BLOCKED"
+    }
+  ],
+  "checkpoints": [],
+  "artifacts": [],
+  "reviews": []
+}
